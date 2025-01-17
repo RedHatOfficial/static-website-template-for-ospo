@@ -4,22 +4,28 @@
 
 /* --------------------------------- Imports -------------------------------- */
 import "./css/App.css";
-import installIcon from "./assets/gravity-ui--arrow-shape-down-to-line.svg";
-import githubIcon from "./assets/octicon--mark-github-24.svg";
-import communityIcon from "./assets/gravity-ui--persons.svg";
-import hardwareIcon from "./assets/gravity-ui--gear.svg";
-import llamaMascot from "./assets/ramalama-logo-llama-only.svg";
+import Welcome from "./Welcome.jsx";
+// import installIcon from "./assets/gravity-ui--arrow-shape-down-to-line.svg";
+// import githubIcon from "./assets/octicon--mark-github-24.svg";
+// import communityIcon from "./assets/gravity-ui--persons.svg";
+// import hardwareIcon from "./assets/gravity-ui--gear.svg";
+// import llamaMascot from "./assets/ramalama-logo-llama-only.svg";
 import aboutGraphic1 from "./assets/ramalama-about-graphic-1.svg";
 import aboutGraphic2 from "./assets/ramalama-about-graphic-2.svg";
 import aboutGraphic3 from "./assets/ramalama-about-graphic-3.svg";
 import aboutGraphic4 from "./assets/ramalama-about-graphic-4.svg";
+import { StrictMode } from "react";
 
 /* -------------------------------- Main App Function -------------------------------- */
 function App() {
   return (
     <>
       <main>
-        {/* ----------------------------- Welcome Section ---------------------------- */}
+        <StrictMode>
+          <Welcome />
+        </StrictMode>
+
+        {/* ----------------------------- Welcome Section ----------------------------
         <div className="welcome viewport welcome-grid">
           <div className="welcome-info" role="banner">
             <h1 className="welcome-h1-orange">rama</h1>
@@ -73,7 +79,7 @@ function App() {
               alt="RamaLama mascot"
             ></img>
           </div>
-        </div>
+        </div> */}
 
         {/* ----------------------------- Install Section ---------------------------- */}
         <div className="install viewport orange-background" id="install">
