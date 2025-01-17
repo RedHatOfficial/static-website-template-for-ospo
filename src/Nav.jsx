@@ -2,7 +2,7 @@
 /*                   JavaScript file for building the navbar                  */
 /* -------------------------------------------------------------------------- */
 
-import "./Nav.css";
+import "./css/Nav.css";
 import ramalamaLogo from "./assets/ramalama-logo-text-only.svg";
 
 const Navbar = () => {
