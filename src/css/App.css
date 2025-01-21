@@ -28,9 +28,9 @@
   }
 }
 
-.orange-background {
+.background-2 {
   color: white;
-  background-color: #cf3c23;
+  background-color: #707070;
 }
 
 .welcome,
@@ -87,7 +87,7 @@
   }
 }
 
-.llama-mascot {
+.logo-full {
   align-self: center;
   justify-self: center;
   grid-area: llama-mascot;

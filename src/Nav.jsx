@@ -3,14 +3,14 @@
 /* -------------------------------------------------------------------------- */
 
 import "./css/Nav.css";
-import ramalamaLogo from "./assets/ramalama-logo-text-only.svg";
+import logoText from "./assets/logo-text.svg";
 
-const Navbar = () => {
+function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-left">
         <a href="">
-          <img className="logo" src={ramalamaLogo} alt="RamaLama Logo"></img>
+          <img className="logo" src={logoText} alt="RamaLama Logo"></img>
         </a>
       </div>
       <div className="navbar-middle"></div>

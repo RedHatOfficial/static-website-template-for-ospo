@@ -2,13 +2,13 @@ function Footer() {
   return (
     <>
       {/* --------------------------------- Footer --------------------------------- */}
-      <div className="footer orange-background">
+      <div className="footer background-2">
         <footer>
           <p>
-            <a href="https://github.com/containers/ramalama">Github</a> |{" "}
-            <a href="https://matrix.to/#/#ramalama:fedoraproject.org">Matrix</a>{" "}
+            <a href="">Github</a> |{" "}
+            <a href="">Matrix</a>{" "}
             |{" "}
-            <a href="https://github.com/containers/ramalama/blob/main/README.md">
+            <a href="">
               Docs
             </a>
           </p>

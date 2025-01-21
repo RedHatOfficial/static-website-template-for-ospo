@@ -2,7 +2,7 @@ import installIcon from "./assets/gravity-ui--arrow-shape-down-to-line.svg";
 import githubIcon from "./assets/octicon--mark-github-24.svg";
 import communityIcon from "./assets/gravity-ui--persons.svg";
 import hardwareIcon from "./assets/gravity-ui--gear.svg";
-import llamaMascot from "./assets/ramalama-logo-llama-only.svg";
+import logoFull from "./assets/logo-square.svg";
 
 function Welcome() {
     return (
@@ -10,14 +10,13 @@ function Welcome() {
          {/* ----------------------------- Welcome Section ---------------------------- */}
         <div className="welcome viewport welcome-grid">
           <div className="welcome-info" role="banner">
-            <h1 className="welcome-h1-orange">rama</h1>
-            <h1 className="welcome-h1">lama</h1>
+            <h1 className="welcome-h1">Heading: Name of project goes here</h1>
             <h2 className="welcome-h2">
-              Make working with AI boring through the use of OCI containers
+              Flavour text for project goes here
             </h2>
             <ul>
               <li>
-                <a href="https://github.com/containers/ramalama?tab=readme-ov-file#install" role="button">
+                <a href="" role="button">
                   <button>
                     {" "}
                     <img src={installIcon} alt="Install Icon"></img>{" "}
@@ -26,7 +25,7 @@ function Welcome() {
                 </a>
               </li>
               <li>
-                <a href="https://github.com/containers/ramalama" role="button">
+                <a href="" role="button">
                   <button>
                     {" "}
                     <img src={githubIcon} alt="GitHub Icon"></img>{" "}
@@ -35,7 +34,7 @@ function Welcome() {
                 </a>
               </li>
               <li>
-                <a href="https://matrix.to/#/#ramalama:fedoraproject.org" role="button">
+                <a href="" role="button">
                   <button>
                     {" "}
                     <img src={communityIcon} alt="Community Icon"></img>{" "}
@@ -44,7 +43,7 @@ function Welcome() {
                 </a>
               </li>
               <li>
-                <a href="https://github.com/containers/ramalama?tab=readme-ov-file#hardware-support" role="button">
+                <a href="" role="button">
                   <button>
                     {" "}
                     <img src={hardwareIcon} alt="Hardware Icon"></img>{" "}
@@ -56,9 +55,9 @@ function Welcome() {
           </div>
           <div className="welcome-image">
             <img
-              className="llama-mascot"
-              src={llamaMascot}
-              alt="RamaLama mascot"
+              className="logo-full"
+              src={logoFull}
+              alt=""
             ></img>
           </div>
         </div>
