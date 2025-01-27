@@ -9,7 +9,7 @@ function Welcome() {
         <>
          {/* ----------------------------- Welcome Section ---------------------------- */}
         <div className="welcome viewport welcome-grid">
-          <div className="welcome-info" role="banner">
+          <div className="welcome-info">
             <h1 className="welcome-h1">Heading: Name of project goes here</h1>
             <h2 className="welcome-h2">
               Flavour text for project goes here

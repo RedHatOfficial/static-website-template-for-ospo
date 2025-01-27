@@ -6,6 +6,7 @@
 import "./css/App.css";
 import Welcome from "./Welcome.jsx";
 import Install from "./Install.jsx";
+import InstallandDemo from "./InstallandDemo.jsx";
 import Demo from "./Demo.jsx";
 import About from "./About.jsx";
 import Footer from "./Footer.jsx";
@@ -19,6 +20,7 @@ function App() {
         <StrictMode>
           <Welcome />
           <Install />
+          <InstallandDemo />
           <Demo />
           <About />
         </StrictMode>

@@ -59,7 +59,8 @@
 }
 
 .welcome-info,
-.llama-mascot {
+.install-gif,
+.logo-full {
   display: block;
 }
 
@@ -68,14 +69,9 @@
   padding: 10%;
 }
 
-.welcome-h1,
-.welcome-h1-orange {
+.welcome-h1 {
   display: inline;
   font-weight: 500;
-}
-
-.welcome-h1-orange {
-  color: #cf3c23;
 }
 
 .welcome-h2 {
@@ -87,7 +83,7 @@
   }
 }
 
-.logo-full {
+.logo-full{
   align-self: center;
   justify-self: center;
   grid-area: llama-mascot;
@@ -137,6 +133,19 @@
   @media screen and (max-width: 768px) {
     padding: 10px;
     font-size: larger;
+  }
+}
+
+.install-gif {
+  align-self: center;
+  justify-self: center;
+  grid-area: llama-mascot;
+  width: 100%;
+  @media screen and (max-width: 1024px) {
+    width: 75%;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 }
 
