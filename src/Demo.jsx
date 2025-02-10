@@ -6,9 +6,9 @@ function Demo() {
       {/* ------------------------------ Demo Section ------------------------------ */}
       <div className="demo viewport background-2">
         <div className="demo-info">
-          <h1 className="demo-header">Demo header here</h1>
+          <h1 className="demo-h1">Demo header here</h1>
           {/* GIF Here */}
-          <img src={demoGIF}></img>
+          <img className="demo-gif" src={demoGIF}></img>
         </div>
       </div>
     </>

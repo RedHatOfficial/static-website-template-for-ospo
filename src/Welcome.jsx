@@ -28,7 +28,7 @@ function Welcome() {
                 <a href="" role="button">
                   <button>
                     {" "}
-                    <img src={githubIcon} alt="GitHub Icon"></img>{" "}
+                    <img className="icon" src={githubIcon} alt="GitHub Icon"></img>{" "}
                     <p>Contribute to the project</p>
                   </button>
                 </a>
