@@ -47,7 +47,7 @@
 
 .welcome-grid {
   display: grid;
-  grid-template-areas: "welcome-info llama-mascot";
+  grid-template-areas: "welcome-info welcome-image";
   align-items: center;
   align-content: stretch;
   justify-items: center;
@@ -86,7 +86,7 @@
 .logo-full{
   align-self: center;
   justify-self: center;
-  grid-area: llama-mascot;
+  grid-area: welcome-image;
   width: 50%;
   @media screen and (max-width: 1024px) {
     width: 75%;
@@ -264,6 +264,9 @@
 .about-graphic-4 {
   width: 18vw;
   margin-top: 1vh;
+  @media screen and (max-width: 1024px) {
+    width: 75vw;
+  }
 }
 
 .about-text-1,

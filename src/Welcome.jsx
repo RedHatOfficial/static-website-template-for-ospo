@@ -10,13 +10,13 @@ function Welcome() {
          {/* ----------------------------- Welcome Section ---------------------------- */}
         <div className="welcome viewport welcome-grid">
           <div className="welcome-info">
-            <h1 className="welcome-h1">Heading: Name of project goes here</h1>
+            <h1 className="welcome-h1">Name of project</h1>
             <h2 className="welcome-h2">
-              Flavour text for project goes here
+              Flavour text for project
             </h2>
             <ul>
               <li>
-                <a href="" role="button">
+                <a href="">
                   <button>
                     {" "}
                     <img src={installIcon} alt="Install Icon"></img>{" "}
@@ -25,7 +25,7 @@ function Welcome() {
                 </a>
               </li>
               <li>
-                <a href="" role="button">
+                <a href="">
                   <button>
                     {" "}
                     <img className="icon" src={githubIcon} alt="GitHub Icon"></img>{" "}
@@ -34,7 +34,7 @@ function Welcome() {
                 </a>
               </li>
               <li>
-                <a href="" role="button">
+                <a href="">
                   <button>
                     {" "}
                     <img src={communityIcon} alt="Community Icon"></img>{" "}
@@ -43,7 +43,7 @@ function Welcome() {
                 </a>
               </li>
               <li>
-                <a href="" role="button">
+                <a href="">
                   <button>
                     {" "}
                     <img src={hardwareIcon} alt="Hardware Icon"></img>{" "}

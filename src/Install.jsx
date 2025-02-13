@@ -4,8 +4,8 @@ function Install() {
       {/* ----------------------------- Install Section ---------------------------- */}
       <div className="install viewport background-2" id="install">
         <div className="install-info">
-          <h1 className="install-h1">How to Install header here</h1>
-          <h2 className="install-h2">How to Install header 2</h2>
+          <h1 className="install-h1">How to Install header</h1>
+          <h2 className="install-h2">More info header</h2>
 
           {/* ----------- Modular Section (copy and paste as many as needed) ---------- */}
           <h3 className="install-h3">Distro:</h3>

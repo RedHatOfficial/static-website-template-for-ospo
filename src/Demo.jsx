@@ -8,7 +8,7 @@ function Demo() {
         <div className="demo-info">
           <h1 className="demo-h1">Demo header here</h1>
           {/* GIF Here */}
-          <img className="demo-gif" src={demoGIF}></img>
+          <img className="demo-gif" src={demoGIF} alt=""></img>
         </div>
       </div>
     </>
