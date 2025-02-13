@@ -3,7 +3,7 @@ import demoGIF from "./assets/GIF.gif"
 function InstallandDemo() {
   return (
     <>
-      <div className="install viewport background-2 welcome-grid">
+      <div className="install viewport background-2 install-grid">
         <div className="install-info">
           <h1 className="install-h1">How to Install header</h1>
           <h2 className="install-h2">More info header</h2>
@@ -18,7 +18,8 @@ function InstallandDemo() {
             </button>
           </a>
         </div>
-        <div className="welcome-image">
+        <div className="install-graphic">
+          <h1 className="demo-h1">Watch in action</h1>
           <img className="install-gif" src={demoGIF} alt=""></img>
         </div>
       </div>

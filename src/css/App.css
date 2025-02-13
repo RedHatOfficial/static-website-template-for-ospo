@@ -83,7 +83,7 @@
   }
 }
 
-.logo-full{
+.logo-full {
   align-self: center;
   justify-self: center;
   grid-area: welcome-image;
@@ -98,7 +98,22 @@
 
 /* ----------------------------- Install Section ---------------------------- */
 
+.install-grid {
+  display: grid;
+  grid-template-areas: "install-info install-graphic";
+  align-items: center;
+  align-content: stretch;
+  justify-items: center;
+  justify-content: stretch;
+  @media screen and (max-width: 768px) {
+    grid-template-areas:
+      "install-info"
+      "install-graphic";
+  }
+}
+
 .install-info {
+  grid-area: install-info;
   padding: 10%;
   @media screen and (max-width: 1024px) {
     font-size: medium;
@@ -136,15 +151,18 @@
   }
 }
 
+.install-graphic {
+  grid-area: install-graphic;
+}
+
 .install-gif {
   align-self: center;
   justify-self: center;
-  grid-area: llama-mascot;
   width: 100%;
   @media screen and (max-width: 1024px) {
     width: 75%;
     @media screen and (max-width: 768px) {
-      display: none;
+      display: 50%;
     }
   }
 }
@@ -152,7 +170,10 @@
 /* ------------------------------ Demo Section ------------------------------ */
 
 .demo-h1 {
-  font-size: xx-large;
+  text-align: center;
+  @media screen and (max-width: 500px) {
+    font-size: xx-large;
+  }
 }
 
 .demo-gif {
