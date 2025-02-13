@@ -83,7 +83,7 @@
   }
 }
 
-.logo-full {
+.logo-full{
   align-self: center;
   justify-self: center;
   grid-area: welcome-image;
@@ -100,20 +100,18 @@
 
 .install-grid {
   display: grid;
-  grid-template-areas: "install-info install-graphic";
+  grid-template-areas: "install-info demo-graphic";
   align-items: center;
   align-content: stretch;
   justify-items: center;
   justify-content: stretch;
-  @media screen and (max-width: 768px) {
-    grid-template-areas:
-      "install-info"
-      "install-graphic";
+  @media screen and (max-width: 500px) {
+    grid-template-areas: "install-info"
+    "demo-graphic"
   }
 }
 
 .install-info {
-  grid-area: install-info;
   padding: 10%;
   @media screen and (max-width: 1024px) {
     font-size: medium;
@@ -152,18 +150,16 @@
 }
 
 .install-graphic {
-  grid-area: install-graphic;
+  padding: 10%;
 }
 
 .install-gif {
   align-self: center;
   justify-self: center;
+  grid-area: demo-graphic;
   width: 100%;
   @media screen and (max-width: 1024px) {
     width: 75%;
-    @media screen and (max-width: 768px) {
-      display: 50%;
-    }
   }
 }
 
@@ -171,9 +167,7 @@
 
 .demo-h1 {
   text-align: center;
-  @media screen and (max-width: 500px) {
-    font-size: xx-large;
-  }
+  font-size: xx-large;
 }
 
 .demo-gif {
@@ -227,6 +221,7 @@
       "graphic-3 graphic-4"
       "text-3 text-4";
     gap: 1em;
+    
     @media screen and (max-width: 500px) {
       grid-template-areas:
         "graphic-1"
@@ -286,7 +281,10 @@
   width: 18vw;
   margin-top: 1vh;
   @media screen and (max-width: 1024px) {
-    width: 75vw;
+    width: 25vw;
+    @media screen and (max-width: 500px) {
+      width: 75vw;
+    }
   }
 }
 

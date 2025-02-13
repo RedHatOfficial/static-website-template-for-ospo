@@ -19,7 +19,7 @@ function InstallandDemo() {
           </a>
         </div>
         <div className="install-graphic">
-          <h1 className="demo-h1">Watch in action</h1>
+          <h1 className="demo-h1"> Watch in action</h1>
           <img className="install-gif" src={demoGIF} alt=""></img>
         </div>
       </div>
