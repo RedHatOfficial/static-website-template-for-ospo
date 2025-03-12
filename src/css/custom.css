@@ -97,7 +97,7 @@
 .welcome-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
@@ -123,7 +123,7 @@
 .welcome-h2 {
   font-weight: 500;
   padding-right: 10rem;
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
     padding: 0%;
     font-size: 1rem;
   }
@@ -135,13 +135,10 @@
 }
 
 .logo-full{
-  width: 30%;
-  @media screen and (max-width: 1024px) {
-    width: 75%;
+  width: 50%;
     @media screen and (max-width: 768px) {
       display: none;
     }
-  }
 }
 
 /* ----------------------------- Install Section ---------------------------- */
