@@ -96,7 +96,7 @@
 
 .welcome-grid {
   display: grid;
-  grid-template-areas: "welcome-info welcome-image";
+  grid-template-columns: 1fr 1fr;
   @media screen and (max-width: 500px) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -113,7 +113,6 @@
   display: flexbox;
   justify-content: center;
   padding: 10%;
-  grid-area: welcome-info;
 }
 
 .welcome-h1 {
@@ -136,9 +135,6 @@
 }
 
 .logo-full{
-  align-self: center;
-  justify-self: center;
-  grid-area: welcome-image;
   width: 30%;
   @media screen and (max-width: 1024px) {
     width: 75%;
