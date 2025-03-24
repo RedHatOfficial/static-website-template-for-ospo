@@ -365,6 +365,6 @@ ul {
   padding: 0;
 }
 
-footer {
-  background-color: #262626 !important;
+.footer--dark {
+  --ifm-footer-background-color: #262626 !important;
 }
