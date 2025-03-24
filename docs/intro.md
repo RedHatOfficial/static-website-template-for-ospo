@@ -5,40 +5,40 @@ sidebar_position: 1
 # Welcome to the OSPO Static Site Template
 
 ## Getting Started
+
+### Forking the repo
+
 Fork the repositorty of the site on our [GitHub](https://https://github.com/RedHatOfficial/static-website-template-for-ospo). 
 
-
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
+Clone your fork to your own computer then using this command and replacing the link with your own HTTPS clone link found underneath the **Code** button (see image below):
 
 ```bash
-npm init docusaurus@latest my-website classic
+git clone https://github.com/[USERNAME]/[NAME-OF-FORK]
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+![Location of HTML clone link](./images/clone-repo.png)
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+## Start the site
 
-## Start your site
+Install [Node.js](https://nodejs.org/en) if you do not have it on your local machine.
 
-Run the development server:
+Run `node --version` in your terminal to check to see if you have it installed correctly. It should come back with a version number (vX.Y.Z):
+
+Run a fresh install of npm on the project:
 
 ```bash
-cd my-website
-npm run start
+cd [NAME-OF-FILE]
+npm install
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+Run the server itself with this command:
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+```bash
+npm start
+```
+
+The `cd` command changes the directory you're working with. 
+
+The `npm start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
 
 Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
