@@ -2,11 +2,9 @@
 sidebar_position: 1
 ---
 
-# Welcome to the OSPO Static Site Template
+# Getting Started
 
-## Getting Started
-
-### Forking the repo
+## Fork and Clone the Repository
 
 Fork the repositorty of the site on our [GitHub](https://https://github.com/RedHatOfficial/static-website-template-for-ospo). 
 
@@ -18,7 +16,7 @@ git clone https://github.com/[USERNAME]/[NAME-OF-FORK]
 
 ![Location of HTML clone link](./images/clone-repo.png)
 
-## Start the site
+## Start the Site
 
 Install [Node.js](https://nodejs.org/en) if you do not have it on your local machine.
 
