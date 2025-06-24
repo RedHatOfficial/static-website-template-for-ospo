@@ -70,7 +70,13 @@
   background-color: white;
   color: black;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: all 0.2s ease;
+}
+
+.installButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.30);
+  transition: 0.2s;
 }
 
 @media screen and (max-width: 768px) {

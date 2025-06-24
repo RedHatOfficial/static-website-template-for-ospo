@@ -88,7 +88,7 @@
   background-color: #7d46ad;
   color: white;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: all 0.2s ease;
   width: 100%;
   @media screen and (max-width: 1024px) and (orientation: portrait) {
     margin: 5% 0;
@@ -101,13 +101,13 @@
 .staticButton:hover {
   background-color: #6db0ff;
   color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.30);
   transition: 0.2s;
 }
 
 [data-theme="dark"] .staticButton:hover {
   background-color: #0e4481;
-  color: white;
-  transition: 0.2s;
 }
 
 .aboutSection1,
