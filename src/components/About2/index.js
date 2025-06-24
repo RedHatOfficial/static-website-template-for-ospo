@@ -1,8 +1,11 @@
+// This has a showForMobile class that is used to hide the about section on desktop
+// Removing for template but if you want the full useEffect, add ${styles.showForMobile} to the first div tag
+
 import styles from "./styles.module.css"
 
 export default function About2() {
     return (
-      <div className={`${styles.showForMobile} ${styles.about} ${styles.aboutViewport} ${styles.blueTheme}`} id="about">
+      <div className={`${styles.about} ${styles.aboutViewport} ${styles.background2}`} id="about">
         <div className={styles.aboutGrid}>
                       <div className={styles.aboutSection1}>
                         <h1 className={styles.aboutHeader}>Header 1</h1>

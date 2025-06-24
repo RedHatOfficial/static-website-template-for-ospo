@@ -1,3 +1,6 @@
+// This has a hideForMobile class that is used to hide the about section on mobile
+// Removing for template but if you want the full useEffect, add ${styles.hideForMobile} to div that contains the about section
+
 import { useHistory } from "react-router-dom";
 import welcomeLogo from "@site/static/img/logo-text.png";
 import welcomeLogoDark from "@site/static/img/logo-text.png";
