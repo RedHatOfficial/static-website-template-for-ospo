@@ -1,3 +1,26 @@
+/* Welcome Component Styles */
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0%;
+}
+
+.viewport {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+}
+
+.header {
+  display: flex;
+  align-content: center;
+  @media screen and (max-width: 1440px) {
+    font-size: 2.5rem;
+  }
+}
+
 .logoSize {
   max-width: 50px;
   align-self: center;
@@ -7,4 +30,78 @@
 p {
   align-content: center;
   justify-content: center;
+}
+
+.welcomeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 768px) {
+  .welcomeGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+.welcomeInfo {
+  display: flexbox;
+  justify-content: center;
+  padding: 10%;
+}
+
+.welcomeH1 {
+  display: inline;
+  font-weight: 500;
+}
+
+.welcomeH2 {
+  font-weight: 500;
+  padding-right: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+  .welcomeH2 {
+    padding: 0%;
+    font-size: 1rem;
+  }
+}
+
+.welcomeImage {
+  display: flex;
+  justify-content: center;
+}
+
+.logoFull {
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .logoFull {
+    display: none;
+  }
+}
+
+.staticButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  margin: 12.5px 0;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  width: 70%;
+  @media screen and (max-width: 500px) {
+    padding: 0.3rem 0.75rem;
+    font-size: 0.7rem;
+    width: 100%;
+  }
 }

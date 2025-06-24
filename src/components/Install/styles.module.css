@@ -1,0 +1,98 @@
+/* Install Component Styles */
+
+.install {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0%;
+}
+
+.viewport {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+}
+
+.background2 {
+  color: white;
+  background-color: #707070;
+}
+
+.installGrid {
+  display: grid;
+  grid-template-areas: "install-info demo-graphic";
+  align-items: center;
+  align-content: stretch;
+  justify-items: center;
+  justify-content: stretch;
+}
+
+@media screen and (max-width: 500px) {
+  .installGrid {
+    grid-template-areas: "install-info"
+    "demo-graphic";
+  }
+}
+
+.installInfo {
+  padding: 10%;
+}
+
+.installH3 {
+  font-weight: 500;
+}
+
+.installCode {
+  font-family: "Red Hat Mono", monospace !important;
+  font-weight: 500;
+  padding: 1rem;
+  background-color: #262626;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.installCode p {
+  display: inline-flex;
+}
+
+.installButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  margin: 12.5px 0;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+@media screen and (max-width: 768px) {
+  .installButton {
+    padding: 10px;
+    font-size: larger;
+  }
+}
+
+.installGraphic {
+  padding: 10%;
+}
+
+.installGif {
+  align-self: center;
+  justify-self: center;
+  grid-area: demo-graphic;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .installGif {
+    width: 75%;
+  }
+}

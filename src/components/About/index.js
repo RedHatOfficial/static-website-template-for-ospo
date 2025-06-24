@@ -3,16 +3,16 @@ import aboutGraphic from "@site/static/img/about-graphic.png";
 
 export default function About() {
   return (
-      <div className="about about-viewport" id="about">
+      <div className={`${styles.about} ${styles.aboutViewport}`} id="about">
         <div className="about-info">
-          <h1 className="about-header">About header here</h1>
-          <div className="about-grid">
+          <h1 className={styles.aboutHeader}>About header here</h1>
+          <div className={styles.aboutGrid}>
             <img
-              className="about-graphic-1"
+              className={styles.aboutGraphic1}
               src={aboutGraphic}
               alt="About Graphic 1"
             ></img>
-            <p className="about-text-1" role="paragraph">
+            <p className={styles.aboutText1} role="paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at
               odio pretium leo porta lobortis. Sed et sem scelerisque, fermentum
               lacus et, dapibus tortor. Nam consectetur ultricies urna id
@@ -20,11 +20,11 @@ export default function About() {
             </p>
 
             <img
-              className="about-graphic-2"
+              className={styles.aboutGraphic2}
               src={aboutGraphic}
               alt="About Graphic 2"
             ></img>
-            <p className="about-text-2" role="paragraph">
+            <p className={styles.aboutText2} role="paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at
               odio pretium leo porta lobortis. Sed et sem scelerisque, fermentum
               lacus et, dapibus tortor. Nam consectetur ultricies urna id
@@ -32,11 +32,11 @@ export default function About() {
             </p>
 
             <img
-              className="about-graphic-3"
+              className={styles.aboutGraphic3}
               src={aboutGraphic}
               alt="About Graphic 3"
             ></img>
-            <p className="about-text-3" role="paragraph">
+            <p className={styles.aboutText3} role="paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at
               odio pretium leo porta lobortis. Sed et sem scelerisque, fermentum
               lacus et, dapibus tortor. Nam consectetur ultricies urna id
@@ -44,11 +44,11 @@ export default function About() {
             </p>
 
             <img
-              className="about-graphic-4"
+              className={styles.aboutGraphic4}
               src={aboutGraphic}
               alt="About Graphic 4"
             ></img>
-            <p className="about-text-4" role="paragraph">
+            <p className={styles.aboutText4} role="paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at
               odio pretium leo porta lobortis. Sed et sem scelerisque, fermentum
               lacus et, dapibus tortor. Nam consectetur ultricies urna id
