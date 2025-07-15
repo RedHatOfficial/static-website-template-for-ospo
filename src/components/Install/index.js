@@ -6,7 +6,7 @@ export default function Install() {
         {/* ----------------------------- Install Section ---------------------------- */}
         <div className={`${styles.install} ${styles.viewport} ${styles.background2}`} id="install">
           <div className={styles.installInfo}>
-            <h1 className="install-h1">How to Install header</h1>
+            <h1 className="install-h1">Install 1</h1>
             <h2 className="install-h2">More info header</h2>
   
             {/* ----------- Modular Section (copy and paste as many as needed) ---------- */}

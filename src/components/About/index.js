@@ -5,7 +5,7 @@ export default function About() {
   return (
       <div className={`${styles.about} ${styles.aboutViewport}`} id="about">
         <div className="about-info">
-          <h1 className={styles.aboutHeader}>About header here</h1>
+          <h1 className={styles.aboutHeader}>About 1</h1>
           <div className={styles.aboutGrid}>
             <img
               className={styles.aboutGraphic1}

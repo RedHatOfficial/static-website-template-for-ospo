@@ -15,7 +15,7 @@ export default function Welcome2() {
         <div className={styles.welcomeInfo}>
           <img className={styles.welcomeLogo} src={welcomeLogo} />
           <img className={styles.welcomeLogoDark} src={welcomeLogoDark} />
-          <h2 className={styles.welcomeH2}>H2 text goes here</h2>
+          <h2 className={styles.welcomeH2}>Welcome 2</h2>
           <div className={styles.buttonGroup}>
             <button
               className={styles.staticButton}

@@ -6,7 +6,7 @@ export default function Welcome() {
     return (
         <div className={`${styles.welcome} ${styles.viewport} ${styles.welcomeGrid}`}>
           <div className={styles.welcomeInfo}>
-            <h1 className={styles.header}>Name of project</h1>
+            <h1 className={styles.header}>Welcome 1</h1>
             <h2 className={styles.welcomeH2}>
               Flavour text for project
             </h2>

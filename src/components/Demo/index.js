@@ -7,7 +7,7 @@ export default function Demo() {
       {/* ------------------------------ Demo Section ------------------------------ */}
       <div className={`${styles.demo} ${styles.viewport} ${styles.background2}`}>   
         <div className="demo-info">
-          <h1 className={styles.demoH1}>Demo header here</h1>
+          <h1 className={styles.demoH1}>Demo 1</h1>
           <img className={styles.demoGIF} src={demoGIF} alt=""></img>
         </div>
       </div>

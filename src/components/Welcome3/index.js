@@ -6,7 +6,7 @@ export default function Welcome3() {
   return (
     <div className={`${styles.welcome} ${styles.viewport}`}>
       <div className={styles.welcomeInfo}>
-        <h1 className={styles.welcomeH1}>Welcome to</h1>
+        <h1 className={styles.welcomeH1}>Welcome 3</h1>
         <img className={styles.welcomeLogo} width="75%" src={welcomeLogo}></img>
         <img className={styles.welcomeLogoSmall} width="100%" src={welcomeLogoSmall}></img>
         <div className={styles.buttonGroup}>

@@ -7,7 +7,7 @@ export default function About3() {
       <div className={styles.aboutInfo}>
         <div className={styles.aboutGrid}>
           <div className={styles.aboutText}>
-            <h1 className={styles.aboutHeader}>Header 1</h1>
+            <h1 className={styles.aboutHeader}>About 3</h1>
             <p className={styles.aboutPara} role="paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
