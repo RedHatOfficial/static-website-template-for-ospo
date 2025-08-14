@@ -17,6 +17,8 @@
     "@docusaurus/core": "^3.8.1",
     "@docusaurus/preset-classic": "^3.8.1",
     "@mdx-js/react": "^3.0.0",
+    "@patternfly/patternfly": "^6.3.0",
+    "@patternfly/react-core": "^6.3.0",
     "clsx": "^2.0.0",
     "docusaurus-lunr-search": "^3.6.0",
     "lunr": "^2.3.9",
