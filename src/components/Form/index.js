@@ -125,50 +125,37 @@ export default function Form({ onComponentSelect }) {
   // Check if any components are selected
   const hasSelections = selectedComponents.length > 0;
 
-  // If form is hidden, render all selected components at original size
-  if (!showForm) {
-    return (
-      <div>
-        <div
-          style={{
-            padding: "20px",
-            textAlign: "center",
-          }}
-        >
-          <Button variant="secondary" onClick={handleBackToForm}>
-            ← Back to Component Selection
-          </Button>
-          <h2 style={{ margin: "10px 0", color: "#333" }}>
-            Selected Components ({selectedComponents.length})
-          </h2>
-        </div>
-        {selectedComponents.map((item, index) => {
-          const ComponentToRender = item.component;
-          console.log(selectedComponents)
-          return ComponentToRender ? <ComponentToRender key={index} /> : null;
-        })}
-      </div>
-    );
-  }
-
   // Render the form with separate dropdowns
   return (
     <div
       style={{
         padding: "20px",
-        backgroundColor: "#f5f5f5",
         minHeight: "100vh",
       }}
     >
       <div style={{ textAlign: "center", marginBottom: "30px" }}>
-        <h2>Component Builder</h2>
-        <p>Select components to build your page layout:</p>
+        <h2>OSPO Static Website Builder</h2>
+        <p>
+          This website is to help you decide what features you would like on
+          your website.
+          <br />
+          Select the features you would like to add to your website and a
+          preview will generate below.
+          <br />
+          Take note of what sections you would like us to add to your website
+          and add them to the Google Form.
+          <br />
+          If there is a specific layout that you would like that is not featured
+          here, please contact us and we will be happy to help you.
+        </p>
+
+        <br/>
 
         {/* Separate dropdowns in a grid */}
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+            gridTemplateColumns: "repeat(4, 1fr)",
             gap: "20px",
             maxWidth: "800px",
             margin: "20px auto",
@@ -258,15 +245,6 @@ export default function Form({ onComponentSelect }) {
             </FormSelect>
           </div>
         </div>
-
-        <Button
-          variant="primary"
-          onClick={handleButtonClick}
-          isDisabled={!hasSelections}
-          style={{ marginTop: "20px" }}
-        >
-          Show Selected Components ({selectedComponents.length})
-        </Button>
       </div>
 
       {/* Preview Section - Original size components */}
