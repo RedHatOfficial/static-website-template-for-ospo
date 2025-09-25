@@ -1,14 +1,14 @@
 import "@patternfly/react-core/dist/styles/base.css";
 import { useState } from "react";
-import { FormSelect, FormSelectOption, Button } from "@patternfly/react-core";
-import Welcome from "@site/src/components/Welcome";
-import Welcome2 from "@site/src/components/Welcome2";
-import Welcome3 from "@site/src/components/Welcome3";
-import About from "@site/src/components/About";
-import About2 from "@site/src/components/About2";
-import About3 from "@site/src/components/About3";
-import Demo from "@site/src/components/Demo";
-import Install from "@site/src/components/Install";
+import { FormSelect, FormSelectOption } from "@patternfly/react-core";
+import Welcome from "@site/src/components/preview-components/Welcome";
+import Welcome2 from "@site/src/components/preview-components/Welcome2";
+import Welcome3 from "@site/src/components/preview-components/Welcome3";
+import About from "@site/src/components/preview-components/About";
+import About2 from "@site/src/components/preview-components/About2";
+import About3 from "@site/src/components/preview-components/About3";
+import Demo from "@site/src/components/preview-components/Demo";
+import Install from "@site/src/components/preview-components/Install";
 
 export default function Form({ onComponentSelect }) {
   // Separate state for each component type
@@ -16,7 +16,6 @@ export default function Form({ onComponentSelect }) {
   const [aboutSelection, setAboutSelection] = useState("none");
   const [demoSelection, setDemoSelection] = useState("none");
   const [installSelection, setInstallSelection] = useState("none");
-  const [showForm, setShowForm] = useState(true);
 
   const handleWelcomeChange = (_event, value) => {
     setWelcomeSelection(value);
@@ -32,22 +31,6 @@ export default function Form({ onComponentSelect }) {
 
   const handleInstallChange = (_event, value) => {
     setInstallSelection(value);
-  };
-
-  const handleButtonClick = () => {
-    // Check if at least one component is selected
-    if (
-      welcomeSelection !== "none" ||
-      aboutSelection !== "none" ||
-      demoSelection !== "none" ||
-      installSelection !== "none"
-    ) {
-      setShowForm(false);
-    }
-  };
-
-  const handleBackToForm = () => {
-    setShowForm(true);
   };
 
   // Options for each dropdown
@@ -125,50 +108,36 @@ export default function Form({ onComponentSelect }) {
   // Check if any components are selected
   const hasSelections = selectedComponents.length > 0;
 
-  // If form is hidden, render all selected components at original size
-  if (!showForm) {
-    return (
-      <div>
-        <div
-          style={{
-            padding: "20px",
-            textAlign: "center",
-          }}
-        >
-          <Button variant="secondary" onClick={handleBackToForm}>
-            ← Back to Component Selection
-          </Button>
-          <h2 style={{ margin: "10px 0", color: "#333" }}>
-            Selected Components ({selectedComponents.length})
-          </h2>
-        </div>
-        {selectedComponents.map((item, index) => {
-          const ComponentToRender = item.component;
-          console.log(selectedComponents)
-          return ComponentToRender ? <ComponentToRender key={index} /> : null;
-        })}
-      </div>
-    );
-  }
-
   // Render the form with separate dropdowns
   return (
     <div
       style={{
         padding: "20px",
-        backgroundColor: "#f5f5f5",
         minHeight: "100vh",
       }}
     >
       <div style={{ textAlign: "center", marginBottom: "30px" }}>
-        <h2>Component Builder</h2>
-        <p>Select components to build your page layout:</p>
+        <h2>OSPO Static Website Builder</h2>
+        <p>
+          This website is to help you decide what features you would like on
+          your website.
+          <br />
+          Select the features you would like to add to your website and a
+          preview will generate below.
+          <br />
+          Take note of what sections you like and select them on the Google Form.
+          <br />
+          If there is a specific layout that you would like that is not featured
+          here, please contact us and we will be happy to help you!
+        </p>
+
+        <br/>
 
         {/* Separate dropdowns in a grid */}
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+            gridTemplateColumns: "repeat(4, 1fr)",
             gap: "20px",
             maxWidth: "800px",
             margin: "20px auto",
@@ -258,15 +227,6 @@ export default function Form({ onComponentSelect }) {
             </FormSelect>
           </div>
         </div>
-
-        <Button
-          variant="primary"
-          onClick={handleButtonClick}
-          isDisabled={!hasSelections}
-          style={{ marginTop: "20px" }}
-        >
-          Show Selected Components ({selectedComponents.length})
-        </Button>
       </div>
 
       {/* Preview Section - Original size components */}
