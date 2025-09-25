@@ -1,14 +1,14 @@
 import "@patternfly/react-core/dist/styles/base.css";
 import { useState } from "react";
-import { FormSelect, FormSelectOption, Button } from "@patternfly/react-core";
-import Welcome from "@site/src/components/Welcome";
-import Welcome2 from "@site/src/components/Welcome2";
-import Welcome3 from "@site/src/components/Welcome3";
-import About from "@site/src/components/About";
-import About2 from "@site/src/components/About2";
-import About3 from "@site/src/components/About3";
-import Demo from "@site/src/components/Demo";
-import Install from "@site/src/components/Install";
+import { FormSelect, FormSelectOption } from "@patternfly/react-core";
+import Welcome from "@site/src/components/preview-components/Welcome";
+import Welcome2 from "@site/src/components/preview-components/Welcome2";
+import Welcome3 from "@site/src/components/preview-components/Welcome3";
+import About from "@site/src/components/preview-components/About";
+import About2 from "@site/src/components/preview-components/About2";
+import About3 from "@site/src/components/preview-components/About3";
+import Demo from "@site/src/components/preview-components/Demo";
+import Install from "@site/src/components/preview-components/Install";
 
 export default function Form({ onComponentSelect }) {
   // Separate state for each component type
@@ -16,7 +16,6 @@ export default function Form({ onComponentSelect }) {
   const [aboutSelection, setAboutSelection] = useState("none");
   const [demoSelection, setDemoSelection] = useState("none");
   const [installSelection, setInstallSelection] = useState("none");
-  const [showForm, setShowForm] = useState(true);
 
   const handleWelcomeChange = (_event, value) => {
     setWelcomeSelection(value);
@@ -32,22 +31,6 @@ export default function Form({ onComponentSelect }) {
 
   const handleInstallChange = (_event, value) => {
     setInstallSelection(value);
-  };
-
-  const handleButtonClick = () => {
-    // Check if at least one component is selected
-    if (
-      welcomeSelection !== "none" ||
-      aboutSelection !== "none" ||
-      demoSelection !== "none" ||
-      installSelection !== "none"
-    ) {
-      setShowForm(false);
-    }
-  };
-
-  const handleBackToForm = () => {
-    setShowForm(true);
   };
 
   // Options for each dropdown
@@ -142,11 +125,10 @@ export default function Form({ onComponentSelect }) {
           Select the features you would like to add to your website and a
           preview will generate below.
           <br />
-          Take note of what sections you would like us to add to your website
-          and add them to the Google Form.
+          Take note of what sections you like and select them on the Google Form.
           <br />
           If there is a specific layout that you would like that is not featured
-          here, please contact us and we will be happy to help you.
+          here, please contact us and we will be happy to help you!
         </p>
 
         <br/>
