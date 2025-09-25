@@ -12,7 +12,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config = {
   title: "OSPO Static Website Template",
   tagline: "Powered by Docusaurus",
-  favicon: "img/favicon.png",
+  favicon: "img/favicon.ico",
 
   // Set the production url of your site here
   url: "https://redhatofficial.github.io",
@@ -90,7 +90,9 @@ const config = {
         // title: "My Site",
         logo: {
           alt: "Example Logo",
-          src: "img/logo-text.png",
+          src: "img/Logo-Red_Hat-Open_Source_Program_Office-A-Standard-RGB.Small-logo-(transparent-background).png",
+          srcDark:
+            "img/Logo-Red_Hat-Open_Source_Program_Office-A-Reverse-RGB.Small-logo-(transparent-background).png",
         },
         items: [
           {
@@ -121,23 +123,6 @@ const config = {
               },
             ],
           },
-          // {
-          //   title: "Community",
-          //   items: [
-          //     {
-          //       label: "Stack Overflow",
-          //       href: "https://stackoverflow.com/questions/tagged/docusaurus",
-          //     },
-          //     {
-          //       label: "Discord",
-          //       href: "https://discordapp.com/invite/docusaurus",
-          //     },
-          //     {
-          //       label: "X",
-          //       href: "https://x.com/docusaurus",
-          //     },
-          //   ],
-          // },
           {
             title: "More",
             items: [
