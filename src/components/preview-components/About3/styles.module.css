@@ -1,0 +1,62 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+  @media screen and (max-width: 1024px) {
+    padding: 15% 10%;
+    @media screen and (max-width: 500px) {
+      padding: 30% 10%;
+    }
+  }
+}
+
+.aboutViewport {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    @media screen and (max-width: 1024px) {
+      height: auto;
+    }
+  }
+
+.aboutSection {
+  padding: 5rem;
+}
+
+.aboutHeader {
+  display: flex;
+  align-content: center;
+  @media screen and (max-width: 1440px) {
+    font-size: 2.5rem;
+  }
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+.aboutText {
+  align-content: center;
+  justify-content: center;
+}
+
+.aboutPara,
+.aboutGif {
+  display: block;
+}
+
+.aboutGif {
+  justify-self: center;
+  align-self: center;
+  width: 75%;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    padding-top: 10%;
+  }
+}
